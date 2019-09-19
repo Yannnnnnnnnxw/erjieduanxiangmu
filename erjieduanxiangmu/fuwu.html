@@ -561,25 +561,25 @@
                     </div> 
             </div> 
     <div class="bottom">
-            <div class="flex-item">
+            <div class="flex-item" id="du">
                 <div>
                     <img width="30%" src="../erjieduanxiangmu/dest/bulid/img/du.png" alt="">
                 </div>
                 <p>毒</p>
             </div>
-            <div class="flex-item">
+            <div class="flex-item" id="goumai">
                 <div>
                     <img width="30%"  src="../erjieduanxiangmu/dest/bulid/img/buy.png" alt="">
                 </div>
                 <p>购买</p>
             </div>
-            <div class="flex-item">
+            <div class="flex-item" id="fuwu">
                  <div>
                      <img width="30%"  src="../erjieduanxiangmu/dest/bulid/img/service.png" alt="">
                  </div>
                  <p>服务</p>
             </div>  
-            <div class="flex-item">
+            <div class="flex-item" id="wo">
                 <div>
                     <img width="30%"  src="../erjieduanxiangmu/dest/bulid/img/zhangyu.png" alt="">
                 </div>
@@ -600,6 +600,22 @@
             }
         }
         
+        var du = document.querySelector('#du');
+        du.onclick=function(){
+            window.location.href='index.html';
+        }
+        var goumai = document.querySelector('#goumai');
+        goumai.onclick=function(){
+            window.location.href='buy.html';
+        }
+        var fuwu = document.querySelector('#fuwu');
+        fuwu.onclick=function(){
+            window.location.href='fuwu.html';
+        }
+        var wo = document.querySelector('#wo');
+        wo.onclick=function(){
+            window.location.href='lipeng.html';
+        }
     </script>
 </body>
 </html>
