@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/10 + "px"</script>
+    <link rel="stylesheet" href="dest/bulid/css/dingdan.css">
+</head>
+<body>
+    <div class="fanhui_box">
+        <img class="fanhui" src="src/img/尾巴箭头左.png" alt="">
+        <span>确认订单</span>
+    </div>
+    <div class="dizhi">
+        <div class="dizhi_left">
+            <img src="src/img/地址.png" alt="">
+            <span>添加收货地址</span>
+        </div>
+        <img class="dizhi_right" src="src/img/箭头 (1).png" alt="">
+        <img class="fengexian" src="src/img/花分割.png" alt="">
+    </div>
+
+    <div class="shangpin_box">
+        <img src="src/img/鞋1.png" alt="">
+        <div class="shangpin">
+            <p>Nike Air Force 1 Low 白 换勾</p>
+            <div class="mashu">
+                <img src="src/img/毒黑框.png" alt="">
+                <span>41码</span>
+                <span>数量x1</span>
+                <span><span>￥</span><span class="_danjia">989</span></span>
+            </div>
+        </div>
+        <div class="grmjfh"><span>个人卖家发货</span><img src="src/img/圈问号.png" alt=""></div>
+    </div>
+    <div class="hongbao">
+        <div class="hongbao_left">
+            <span>下单后，分享即反现金红包</span>
+            <img src="src/img/红包.png" alt="">
+        </div>
+        <span>￥17</span>
+    </div>
+    <div class="mjxz">
+        <p>1、若卖家未在36小时内发货，您将获得41.45元现金及170元优惠券补偿。</p>
+        <p>2、每件交易物品均由平台针对实物进行鉴别，鉴于商品价格波动性，同时每个款式每个尺码的商品出售时仅有一件等情况。故不支持退还差价。</p>
+        <p>3、温馨提示：商品价格均由市场供需决定、可能存在波动、请理性消费。查看详情></p>
+        <div><span>提交订单即表示同意</span><span>买家须知</span></div>
+    </div>
+    <div class="bottom_box">
+        <div class="bottom_box-div1" ><img src="src/img/毒黑框.png" alt=""><span>本订单由中华保险 x 毒App联合保障正品</span></div>
+        <div class="bottom_box-div2">
+            <div class="shifukuan">
+                <span>实付款:￥</span>
+                <span class="fukuan">989.00</span>
+            </div>
+            <div class="tijiaodindan">
+                <span>提交订单</span>
+            </div>
+        </div>
+    </div>
+    <script>
+        var fanhui =document.querySelector(".fanhui")
+        var fukuan =document.querySelector(".fukuan")
+        var tijiaodindan =document.querySelector(".tijiaodindan")
+        var danjia =document.querySelector("._danjia")
+        fanhui.onclick=function(){
+            history.go(-1)
+        }
+        var str = location.href
+        var num = str.lastIndexOf("=")
+        var price = str.substr(num+1)
+        if(num==-1){
+            fukuan.innerHTML=989
+            danjia.innerHTML=989
+        }else{
+            fukuan.innerHTML=price
+            danjia.innerHTML=price
+        }
+        tijiaodindan.onclick=function(){
+            window.location.href=`gouwuche.html?price=${fukuan.innerHTML}`
+        }
+    </script>
+</body>
+</html>
