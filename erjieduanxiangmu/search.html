@@ -15,6 +15,9 @@
             width: 100%;
             height: 1rem;
         }
+        .searchbar img{
+            height: 0.5rem;
+        }
         .searchbar input{
             position: absolute;
             top: 0.3rem;
@@ -26,63 +29,64 @@
             border: none;
             padding-left: 0.6rem;
             background: rgba(203, 203, 206,0.7);
+            font-size: 0.4rem;
         }
-      .quxiao{
-          font-size: 0.3rem;
-          color:#000;
-          position: absolute;
-          top:0.35rem;
-          right:1rem;
-      }
-    .fang{
-        position: absolute;
-        top:0.4rem;
-        left:0.6rem;
-        z-index: 2
-    }
-    .hot{
-        font-size: 0.4rem;
-        padding: 0.5rem;
-    }
-    .lineone{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 1rem;
-        background-color:#fff;
-   }
-    .flex-item {
+        .quxiao{
+            font-size: 0.5rem;
+            color:#000;
+            position: absolute;
+            top:0.35rem;
+            right:0.5rem;
+        }
+        .fang{
+            position: absolute;
+            top:0.4rem;
+            left:0.6rem;
+            z-index: 2
+        }
+        .hot{
+            font-size: 0.4rem;
+            padding: 0.5rem;
+        }
+        .lineone{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1rem;
+            background-color:#fff;
+        }
+        .flex-item {
             background: rgba(203, 203, 206,0.7);
             height: 0.5rem;
             margin: 0.1rem;
             padding:0.1rem 0.2rem;
             border-radius: 0.1rem;
-    }
-    .flex-item p{
-        font-size: 0.4rem;
-    }
-    .linetwo{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 1rem;
-        background-color:#fff;
-   }
-   .linethree{
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        height: 1rem;
-        background-color:#fff;
-   }
+        }
+        .flex-item p{
+            font-size: 0.4rem;
+        }
+        .linetwo{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1rem;
+            background-color:#fff;
+        }
+        .linethree{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            height: 1rem;
+            background-color:#fff;
+        }
    
     </style>
 </head>
 <body>
     <!-- //搜索框 -->
     <div class="searchbar">
-            <img class="fang" src="../erjieduanxiangmu/dest/bulid/img/fangda.png" alt="">
-        <input  type="text" placeholder="开学最炸穿搭"> 
+        <img class="fang" src="../erjieduanxiangmu/dest/bulid/img/fangda.png" alt="">
+        <input class="ipt" type="text" placeholder="开学最炸穿搭"> 
         <span class="quxiao">取消</span>  
     </div>
     <p class="hot">热门搜索</p>
@@ -125,7 +129,21 @@
         quxiao.onclick=function(){
             history.go(-1);
         }
-    
+        var fang = document.querySelector('.fang');
+        var ipt = document.querySelector('.ipt');
+        fang.onclick=function(){
+            if(ipt.value!=''){
+                window.location.href='danjianshangpin.html';
+            }else{
+                alert('请输入要搜索的内容')
+            }
+        }
+        var flex_item = document.querySelectorAll('.flex-item');
+        for(var i = 0;i<flex_item.length;i++){
+            flex_item[i].onclick=function(){
+                window.location.href='danjianshangpin.html';
+            }
+        }
     </script>
 </body>
 </html>
