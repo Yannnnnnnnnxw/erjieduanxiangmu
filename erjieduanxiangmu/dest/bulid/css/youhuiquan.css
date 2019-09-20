@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#box {
+  width: 100%;
+}
+#box-top {
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  text-align: center;
+}
+#box-top p {
+  height: 1rem;
+  font-size: 0.5rem;
+  line-height: 1rem;
+}
+.chevronleft {
+  position: absolute;
+  left: 0.3rem;
+}
+#box-bottom {
+  width: 10rem;
+  text-align: center;
+  height: 20rem;
+}
+#box-bottom img {
+  width: 100%;
+}
+.out {
+  width: 9rem;
+  height: 1.3rem;
+  text-align: center;
+  margin-left: 0.5rem;
+  background-color: #684EBF;
+  padding-top: 0.2rem;
+  border-radius: 0.2rem;
+  background: -webkit-linear-gradient(top, #9F8CD7, #3F2596);
+  animation: a 2s linear 1s infinite normal running;
+}
+.out:hover {
+  animation-play-state: paused;
+}
+@keyframes a {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.01);
+  }
+  30% {
+    transform: scale(1.02);
+  }
+  50% {
+    transform: scale(1.03);
+  }
+  70% {
+    transform: scale(1.02);
+  }
+  90% {
+    transform: scale(1.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.inner {
+  width: 8.6rem;
+  height: 1.1rem;
+  margin-left: 0.2rem;
+  line-height: 1.1rem;
+  background-color: #5A3EB5;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 900;
+  border-radius: 0.2rem;
+  border: 1px solid #999999;
+  background: -webkit-linear-gradient(top, #7258C3, #4F31B5);
+}
+#fx-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  height: 15rem;
+  display: none;
+}
+#fx-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  background-color: #fff;
+  display: none;
+}
+.fb-item {
+  float: left;
+  text-align: center;
+  width: 1.5rem;
+  padding: 0 0.5rem;
+}
+.fb-item-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: 0.3rem 0.3rem;
+  background-size: 60%;
+  margin-top: 0.5rem;
+  border-radius: 50%;
+  border: 1px solid #000;
+}
+.icon1 {
+  background-image: url('../img/yhqwx.png');
+}
+.icon2 {
+  background-image: url('../img/yhqpyq.png');
+}
+.icon3 {
+  background-image: url('../img/yhqwb.png');
+}
+.icon4 {
+  background-image: url('../img/yhqqq.png');
+}
+.fb-item-name {
+  margin-top: 0.2rem;
+  font-size: 0.3rem;
+  color: #999999;
+}
