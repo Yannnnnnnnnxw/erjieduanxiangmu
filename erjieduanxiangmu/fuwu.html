@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>service</title>
+    <script>document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/10+'px'</script>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .bottom{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        width: 100%;
+        height: 1.8rem;  
+        justify-content: space-around; 
+    }
+    .flex-item {
+        background:#fff;
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+    }
+    .flex-item p{
+        font-size: 0.3rem;
+    }
+    .lineone {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        height: 2rem;
+        background-color:#fff;
+        }
+    .item {
+        background:#fff;
+        width: 2rem;
+        height: 1.5rem;
+        text-align: center;
+        margin: 0.2rem;
+    }
+    .item p{
+        font-size: 0.3rem;
+    }
+    .bigdiv{
+        width: 95%;
+        height: 7.5rem;
+        margin: 0 auto;
+        margin: 10px;
+        box-shadow: 2px 4px 6px #666;
+        background: #fff;
+    }
+    .bigdiv-big{
+       width: 95%;
+       height: 5.5rem;
+       background: #fff;
+       margin: 0 auto;
+       position: relative;
+    }
+    .jianbie{
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+    .leiji{
+        font-size: 0.4rem;
+        padding: 0 0 0 1rem;
+    }
+    .waixingimg img{
+        position: absolute;
+        top:1.5rem;
+        right:0rem;
+    }
+    .bluefree{
+        width: 90%;
+        height: 0.8rem;
+        background:#00C0C1;
+        margin: 0 auto;
+        margin-top: 0.3rem;
+    }
+    .free{
+        color:#fff;
+        font-size: 0.5rem;
+        text-align: center;
+    }
+    .bigdiv-small{
+        width:95%;
+        height: 1.8rem; 
+        background: #fff;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .flexitem{
+        background-color:#fff;
+        width: 2.5rem;
+        height: 1rem;
+        text-align: center;
+   }
+   .flexitem p{
+       font-size: 0.3rem;
+   }
+   .dangqian {
+      text-align: center;
+      font-size: 0.5rem;
+      background:#fff;
+      width:100%;
+      height:1rem;
+   }
+   .jianshi{
+       display: flex;
+       justify-content: space-between;
+       width: 100%;
+       height: 4rem;
+       background: #999;
+   }
+   .flex-item{
+       width: 12rem;
+       height: 4rem;
+   }
+   .fs1{
+       font-size: 1rem;
+       font-weight: bold;
+   }
+   .fs2{
+       font-size: 0.5rem;
+       color:#666;
+   }
+   .fs3{
+       font-size: 1rem;
+       color:#666;
+   }
+   .fs4{
+       font-size: 0.5rem;
+       color:#999;
+   }
+   .hong{
+        color:#CE638A; 
+   }
+   .small-div{
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #000;
+        float: left;
+        margin-left: 0.5rem;
+    }
+    .chao{
+       background: #000;
+       color:#fff;
+   }
+   .jian{
+       color: #000;
+       font-size: 0.7rem;
+   }
+    </style>
+</head>
+<body>
+        <div class="lineone">
+                <div class="item">
+                    <div>
+                        <img src="../erjieduanxiangmu/dest/bulid/img/zixun.png" alt="">
+                    </div>
+                    <p>最新资讯</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../erjieduanxiangmu/dest/bulid/img/xinxi.png" alt="">
+                    </div>
+                    <p>达人问答</p>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="../erjieduanxiangmu/dest/bulid/img/rili.png" alt="">
+                    </div>
+                    <p>发售日历</p>
+                </div>  
+        </div>
+        <div class="bigdiv">
+                <div class="bigdiv-big">
+                  <p class="jianbie">鉴别服务开创者</p>
+                  <span class="jianbie" >27,963,358</span>
+                  <p  class="leiji">累计鉴别数已超过</p>
+                  <div class="waixingimg">
+                      <img width="40%"  src="../erjieduanxiangmu/dest/bulid/img/waixing.png" alt="">
+                  </div>
+                  <div class="bluefree">
+                      <p class="free">免费鉴别</p>
+                  </div>
+                </div>
+                <div class="bigdiv-small">
+                    <div class="flexitem">
+                        <div>
+                            <img width="30%" src="../erjieduanxiangmu/dest/bulid/img/leibie.png" alt="">
+                        </div>
+                        <p>选择类别</p>
+                    </div>
+                    <div class="flexitem">
+                        <div>
+                            <img width="30%" src="../erjieduanxiangmu/dest/bulid/img/paizhao.png" alt="">
+                        </div>
+                        <p>拍摄细节</p>
+                    </div>
+                    <div class="flexitem">
+                        <div>
+                            <img width="30%" src="../erjieduanxiangmu/dest/bulid/img/dengjie.png" alt="">
+                        </div>
+                        <p>等待结果</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dangqian">
+                  当前在线鉴别师  
+            </div>
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/xiongmao.png" alt="">               
+                        </div>
+                        <p class="fs1">熊猫侠</p>
+                        <p class="fs2">球鞋</p>
+                        <p class="fs3">专注Adidas/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">638</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/laoshu.png" alt="">
+                        </div>
+                        <p class="fs1">Conway</p>
+                        <p class="fs2">球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">468</span> 旧均鉴别 </p>
+                        <p class="fs2">999</p>
+                    </div> 
+            </div>  
+            <div class="jianshi">
+                    <div class="flex-item">
+                              <div>
+                                  <div class="small-div">
+                                      <div class="chao"><p> 潮牌</p></div>
+                                      <div class="jian"><p>鉴别师</p></div>
+                                  </div>
+                                  <img src="../erjieduanxiangmu/dest/bulid/img/heiren.png" alt=""> 
+                              </div>
+                         <p class="fs1">FR5DAY(实习)</p>
+                          <p class="fs2">潮流服装</p>
+                          <p class="fs3">Stussy/Thrasher/Undef</p>
+                          <p class="fs4">排队人数 <span class="hong">41</span> 旧均鉴别 </p>
+                          <p class="fs2">217</p>
+                    </div>
+                    <div class="flex-item">
+                          <div>
+                                <div class="small-div">
+                                      <div class="chao"><p> 潮牌</p></div>
+                                      <div class="jian"><p>鉴别师</p></div>
+                                </div>
+                              <img src="../erjieduanxiangmu/dest/bulid/img/juren.png" alt="">
+                          </div>
+                            <p class="fs1">Hawkeye_鹰眼</p>
+                             <p class="fs2">潮流服装,帽子,包袋</p>
+                             <p class="fs3">Supreme/FR2/Champion</p>
+                             <p class="fs4">排队人数 <span class="hong">38</span> 旧均鉴别 </p>
+                             <p class="fs2">999+</p>
+                       </div>
+            </div>
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/gangteie.png" alt="">               
+                        </div>
+                        <p class="fs1">钢铁小子</p>
+                        <p class="fs2">球鞋 运动服 球衣</p>
+                        <p class="fs3">Nike/Adidas/Air/Jordan</p>
+                        <p class="fs4">排队人数 <span class="hong">42</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/geifu" alt="">
+                        </div>
+                        <p class="fs1">一百万个雷黑</p>
+                        <p class="fs2">运动 帽子 球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">468</span> 旧均鉴别 </p>
+                        <p class="fs2">999</p>
+                    </div> 
+            </div> 
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/chimu.png" alt="">               
+                        </div>
+                        <p class="fs1">赤木婷子</p>
+                        <p class="fs2">球鞋 </p>
+                        <p class="fs3">Nike/Adidas/Air/Jordan</p>
+                        <p class="fs4">排队人数 <span class="hong">563</span> 旧均鉴别 </p>
+                        <p class="fs2">999+</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/bailu.png" alt="">
+                        </div>
+                        <p class="fs1">白鹭鹭鹭</p>
+                        <p class="fs2"> 球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">193</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div> 
+            </div> 
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/xiongmao.png" alt="">               
+                        </div>
+                        <p class="fs1">熊猫侠</p>
+                        <p class="fs2">球鞋</p>
+                        <p class="fs3">专注Adidas/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">638</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/laoshu.png" alt="">
+                        </div>
+                        <p class="fs1">Conway</p>
+                        <p class="fs2">球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">468</span> 旧均鉴别 </p>
+                        <p class="fs2">999</p>
+                    </div> 
+            </div>  
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/gangteie.png" alt="">               
+                        </div>
+                        <p class="fs1">钢铁小子</p>
+                        <p class="fs2">球鞋 运动服 球衣</p>
+                        <p class="fs3">Nike/Adidas/Air/Jordan</p>
+                        <p class="fs4">排队人数 <span class="hong">42</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/geifu.png" alt="">
+                        </div>
+                        <p class="fs1">一百万个雷黑</p>
+                        <p class="fs2">运动 帽子 球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">468</span> 旧均鉴别 </p>
+                        <p class="fs2">999</p>
+                    </div> 
+            </div> 
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/huo.png" alt="">               
+                        </div>
+                        <p class="fs1">28cmmm</p>
+                        <p class="fs2">球鞋 运动服 球衣</p>
+                        <p class="fs3">Puma/Nike/Adidas/AirJordan</p>
+                        <p class="fs4">排队人数 <span class="hong">214</span> 旧均鉴别 </p>
+                        <p class="fs2">299</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/xuanyi.png" alt="">
+                        </div>
+                        <p class="fs1">炫亿</p>
+                        <p class="fs2">运动服装 帽子 球鞋</p>
+                        <p class="fs3">匡威/Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">122</span> 旧均鉴别 </p>
+                        <p class="fs2">999+</p>
+                    </div> 
+            </div> 
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/chimu.png" alt="">               
+                        </div>
+                        <p class="fs1">赤木婷子</p>
+                        <p class="fs2">球鞋 </p>
+                        <p class="fs3">Nike/Adidas/Air/Jordan</p>
+                        <p class="fs4">排队人数 <span class="hong">563</span> 旧均鉴别 </p>
+                        <p class="fs2">999+</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/bailu.png" alt="">
+                        </div>
+                        <p class="fs1">白鹭鹭鹭</p>
+                        <p class="fs2"> 球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">193</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div> 
+            </div> 
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/xiongmao.png" alt="">               
+                        </div>
+                        <p class="fs1">熊猫侠</p>
+                        <p class="fs2">球鞋</p>
+                        <p class="fs3">专注Adidas/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">638</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/laoshu.png" alt="">
+                        </div>
+                        <p class="fs1">Conway</p>
+                        <p class="fs2">球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">468</span> 旧均鉴别 </p>
+                        <p class="fs2">999</p>
+                    </div> 
+            </div>  
+            <div class="jianshi">
+                    <div class="flex-item">
+                              <div>
+                                  <div class="small-div">
+                                      <div class="chao"><p> 潮牌</p></div>
+                                      <div class="jian"><p>鉴别师</p></div>
+                                  </div>
+                                  <img src="../erjieduanxiangmu/dest/bulid/img/heiren.png" alt=""> 
+                              </div>
+                         <p class="fs1">FR5DAY(实习)</p>
+                          <p class="fs2">潮流服装</p>
+                          <p class="fs3">Stussy/Thrasher/Undef</p>
+                          <p class="fs4">排队人数 <span class="hong">41</span> 旧均鉴别 </p>
+                          <p class="fs2">217</p>
+                    </div>
+                    <div class="flex-item">
+                          <div>
+                                <div class="small-div">
+                                      <div class="chao"><p> 潮牌</p></div>
+                                      <div class="jian"><p>鉴别师</p></div>
+                                </div>
+                              <img src="../erjieduanxiangmu/dest/bulid/img/juren.png" alt="">
+                          </div>
+                            <p class="fs1">Hawkeye_鹰眼</p>
+                             <p class="fs2">潮流服装,帽子,包袋</p>
+                             <p class="fs3">Supreme/FR2/Champion</p>
+                             <p class="fs4">排队人数 <span class="hong">38</span> 旧均鉴别 </p>
+                             <p class="fs2">999+</p>
+                       </div>
+            </div>
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/gangteie.png" alt="">               
+                        </div>
+                        <p class="fs1">钢铁小子</p>
+                        <p class="fs2">球鞋 运动服 球衣</p>
+                        <p class="fs3">Nike/Adidas/Air/Jordan</p>
+                        <p class="fs4">排队人数 <span class="hong">42</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/geifu.png" alt="">
+                        </div>
+                        <p class="fs1">一百万个雷黑</p>
+                        <p class="fs2">运动 帽子 球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">468</span> 旧均鉴别 </p>
+                        <p class="fs2">999</p>
+                    </div> 
+            </div> 
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/chimu.png" alt="">               
+                        </div>
+                        <p class="fs1">赤木婷子</p>
+                        <p class="fs2">球鞋 </p>
+                        <p class="fs3">Nike/Adidas/Air/Jordan</p>
+                        <p class="fs4">排队人数 <span class="hong">563</span> 旧均鉴别 </p>
+                        <p class="fs2">999+</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/bailu.png" alt="">
+                        </div>
+                        <p class="fs1">白鹭鹭鹭</p>
+                        <p class="fs2"> 球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">193</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div> 
+            </div> 
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/xiongmao.png" alt="">               
+                        </div>
+                        <p class="fs1">熊猫侠</p>
+                        <p class="fs2">球鞋</p>
+                        <p class="fs3">专注Adidas/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">638</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/laoshu.png" alt="">
+                        </div>
+                        <p class="fs1">Conway</p>
+                        <p class="fs2">球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">468</span> 旧均鉴别 </p>
+                        <p class="fs2">999</p>
+                    </div> 
+            </div>  
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/gangteie.png" alt="">               
+                        </div>
+                        <p class="fs1">钢铁小子</p>
+                        <p class="fs2">球鞋 运动服 球衣</p>
+                        <p class="fs3">Nike/Adidas/Air/Jordan</p>
+                        <p class="fs4">排队人数 <span class="hong">42</span> 旧均鉴别 </p>
+                        <p class="fs2">899</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/geifu.png" alt="">
+                        </div>
+                        <p class="fs1">一百万个雷黑</p>
+                        <p class="fs2">运动 帽子 球鞋</p>
+                        <p class="fs3">专注Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">468</span> 旧均鉴别 </p>
+                        <p class="fs2">999</p>
+                    </div> 
+            </div> 
+            <div class="jianshi">
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/huo.png" alt="">               
+                        </div>
+                        <p class="fs1">28cmmm</p>
+                        <p class="fs2">球鞋 运动服 球衣</p>
+                        <p class="fs3">Puma/Nike/Adidas/AirJordan</p>
+                        <p class="fs4">排队人数 <span class="hong">214</span> 旧均鉴别 </p>
+                        <p class="fs2">299</p>
+                    </div>
+                    <div class="flex-item">
+                        <div>
+                            <img src="../erjieduanxiangmu/dest/bulid/img/xuanyi.png" alt="">
+                        </div>
+                        <p class="fs1">炫亿</p>
+                        <p class="fs2">运动服装 帽子 球鞋</p>
+                        <p class="fs3">匡威/Adidas/Nike/Air</p>
+                        <p class="fs4">排队人数 <span class="hong">122</span> 旧均鉴别 </p>
+                        <p class="fs2">999+</p>
+                    </div> 
+            </div> 
+    <div class="bottom">
+            <div class="flex-item" id="du">
+                <div>
+                    <img width="30%" src="../erjieduanxiangmu/dest/bulid/img/du.png" alt="">
+                </div>
+                <p>毒</p>
+            </div>
+            <div class="flex-item" id="goumai">
+                <div>
+                    <img width="30%"  src="../erjieduanxiangmu/dest/bulid/img/buy.png" alt="">
+                </div>
+                <p>购买</p>
+            </div>
+            <div class="flex-item" id="fuwu">
+                 <div>
+                     <img width="30%"  src="../erjieduanxiangmu/dest/bulid/img/service.png" alt="">
+                 </div>
+                 <p>服务</p>
+            </div>  
+            <div class="flex-item" id="wo">
+                <div>
+                    <img width="30%"  src="../erjieduanxiangmu/dest/bulid/img/zhangyu.png" alt="">
+                </div>
+                <p>我</p>
+            </div>  
+    </div>
+    <script>
+      
+        window.onscroll=function(){
+            var dangqian=document.querySelector(".dangqian")
+            var topScroll=document.documentElement.scrollTop;
+            if(topScroll>200){
+                dangqian.style.position="fixed";
+                dangqian.style.top="0";
+                dangqian.style.zIndex="8"
+            }else{
+                dangqian.style.position="static"
+            }
+        }
+        
+        var du = document.querySelector('#du');
+        du.onclick=function(){
+            window.location.href='index.html';
+        }
+        var goumai = document.querySelector('#goumai');
+        goumai.onclick=function(){
+            window.location.href='buy.html';
+        }
+        var fuwu = document.querySelector('#fuwu');
+        fuwu.onclick=function(){
+            window.location.href='fuwu.html';
+        }
+        var wo = document.querySelector('#wo');
+        wo.onclick=function(){
+            window.location.href='lipeng.html';
+        }
+    </script>
+</body>
+</html>

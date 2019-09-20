@@ -27,3 +27,19 @@ gulp.task('lc',function(){
     .pipe(less())
     .pipe(gulp.dest('dest/bulid/css'))
 })
+
+var browserSync = require('browser-sync');
+gulp.task('run', ()=>{
+    browserSync.init({
+        server : "./"
+    });
+
+    // 检测当前项目的所有文件是否有变化
+    gulp.watch('*').on('change', browserSync.reload);
+    gulp.watch('src/less/*.less').on('change', function(){
+        gulp.src(['src/less/*.less', ]) 
+        .pipe(less())
+        .pipe(gulp.dest('dest/bulid/css'));
+        browserSync.reload
+    });
+});
