@@ -1,0 +1,141 @@
+*{
+    padding:0;
+    margin:0;
+}
+li{
+    list-style: none;
+}
+.box{
+    background:#F1F1F1;
+}
+.top{
+    background:#fff;
+    width:10rem;
+    height:1rem;
+    position: relative;
+    bottom:0.1rem;
+}
+.arrow{
+    font-size:0.4rem;
+    margin-top:0.35rem;
+    margin-left:0.4rem;
+}
+.top>span{
+    font-weight: 600;
+    color:black;
+    font-size:0.4rem;
+    margin-left:0.6rem;
+}
+.share-alt{
+    position: absolute;
+    font-size:0.55rem;
+    top:0.3rem;
+    right:0.6rem;
+}
+.fenxiang{
+    background:rgba(0,0,0,0.5);
+    width:10rem;
+    height:17.9rem;
+    top:0;
+    position:absolute;
+    display: none;
+}
+.yingcang{
+    width:10rem;
+    height:3rem;
+    background:#fff;
+    position:absolute;
+    bottom:0rem;
+}
+.yc-top{
+    display: flex;
+    text-align: center;
+    width:10rem;
+    height:2rem;
+    background:#fff;
+}
+.flex-1{
+    flex:1;
+}
+.yc-top>.flex-1>div{
+    width:1rem;
+    height:1rem;
+    border:0.07em solid black;
+    border-radius:50%;
+    text-align: center;
+    margin: 0.2rem auto;
+}
+.yc-top>.flex-1>p{
+    font-size:0.3rem;
+    color:black;
+    margin-top:-0.1rem;
+}
+.weixin{
+    font-size:0.5rem;
+    margin-top:0.2rem;
+}
+.pengyouquan{
+    width:0.5rem;
+    margin-top:0.22rem;
+}
+.weibo{
+    font-size:0.5rem;
+    margin-top:0.2rem;
+}
+.qq{
+    font-size:0.5rem;
+    margin-top:0.2rem;
+}
+.yc-bottom{
+    border-top:0.04rem solid #F1F1F1;
+}
+.quxiao{
+    font-size:0.4rem;
+    color:black;
+    text-align: center;
+    line-height: 1rem;
+}
+.bottom{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    /* justify-content:space-around; */
+}
+.danpin1{
+    width:4.9rem;
+    background: #fff;
+    margin-bottom:0.15rem;
+}
+.danpin1::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.danpin1>img{
+    width:100%;
+    height:4.5rem;
+}
+.danpin1>p:nth-of-type(1){
+    font-size:0.45rem;
+    line-height: 0.5rem;
+    margin:0.2rem 0.3rem;
+    color:black;
+    margin-bottom:0.25rem;
+}
+.danpin1>span{
+    float: left;
+    color:black;
+    font-size:0.35rem;
+    margin-left:0.3rem;
+}
+.danpin1>p:nth-of-type(2){
+    font-size:0.45rem;
+    float: left;
+    color:black;
+    margin-bottom:0.4rem;
+}
+.danpin1>p:nth-of-type(3){
+    font-size:0.35rem;
+    float:right;
+    margin-right:0.5rem;
+}
