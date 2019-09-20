@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>document.getElementsByTagName("html")[0].style.fontSize=document.documentElement.clientWidth/10 + "px"</script>
+    <link rel="stylesheet" href="dest/bulid/css/shouyintai.css">
+</head>
+<body>
+    <div class="top_box">
+        <div class="fanhui_box">
+            <img class="search" src="src/img/尾巴箭头左.png" alt="">
+            <span>收银台</span>
+        </div>
+        <div class="shifujine">
+            <p>实付金额</p>
+            <div class="jine"><span>￥</span><span class="danjia">2628.00</span></div>
+        </div>
+        <div class="yedk">
+            <div class="yedk_left">
+                <span>余额抵扣(金额:￥</span>
+                <span>10000000000000000.00</span>
+                <span>)</span>
+            </div>
+            <div class="anniuwai">
+                <div class="anniunei"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom_box">
+        <div class="content">
+            <p class="shifufangshi">选择支付方式</p>
+            <ul>
+                <li class="li">
+                    <div class="zhifu">
+                        <img src="src/img/支付宝支付.png" alt="">
+                        <span class="zhifu2">支付宝支付</span>
+                    </div>
+                    <div class="dui_box dui_box1"><img class="dui" src="src/img/对 (2).png" alt=""></div>
+                </li>
+                <li class="li">
+                    <div class="zhifu">
+                        <img src="src/img/微信支付.png" alt="">
+                        <span class="zhifu2">微信支付</span>
+                    </div>
+                    <div class="dui_box"><img class="dui" src="src/img/对 (2).png" alt=""></div>
+                </li>
+                <li class="li">
+                    <div class="zhifu">
+                        <img src="src/img/花呗支付.png" alt="">
+                        <span class="zhifu2">花呗支付</span>
+                    </div>
+                    <div class="dui_box"><img class="dui" src="src/img/对 (2).png" alt=""></div>
+                </li>
+                <li class="li">
+                    <div class="zhifu">
+                        <img src="src/img/花呗分期.png" alt="">
+                        <span class="zhifu2">花呗分期</span>
+                    </div>
+                    <div class="dui_box"><img class="dui" src="src/img/对 (2).png" alt=""></div>
+                </li>
+            </ul>
+        </div>
+        <div class="dianjizhifu">
+            <div>
+                <span class="zhifu1">支付宝支付</span>
+                <span>￥</span><span class="fukuan">2682.00</span>
+            </div>
+        </div>
+    </div>
+    <div class="zhifuwancheng">
+        <div class="wancheng"><span>完成</span></div>
+    </div>
+    <script src="dest/bulid/js/jquery.js"></script>
+    <script>
+        var nei =document.querySelector(".anniunei")
+        var wai =document.querySelector(".anniuwai")
+        var zhifuwancheng =document.querySelector(".zhifuwancheng")
+        var wancheng =document.querySelector(".wancheng")
+        var search =document.querySelector(".search")
+        var li =document.querySelectorAll(".li")
+        var dui =document.querySelectorAll(".dui_box")
+        var zhifu =document.querySelector(".zhifu1")
+        var dianjizhifu =document.querySelector(".dianjizhifu")
+        var zhifu2 =document.querySelectorAll(".zhifu2")
+        var fukuan =document.querySelector(".fukuan")
+        var danjia =document.querySelector(".danjia")
+        $(".anniunei").click(function(){
+            $(".anniunei").animate({left:'0.55rem'});
+            $(".anniuwai").css({background:"#00C0C1"})
+            if(nei.style.left=="0.55rem"){
+                $(".anniunei").animate({left:'0rem'});
+                $(".anniuwai").css({background:"#EBEAEF"})
+            }
+        }); 
+        for(var i=0;i<li.length;i++){
+            li[i].index=i
+            li[i].onclick=function(){
+                console.log(123)
+                for(var j=0;j<dui.length;j++){
+                    dui[j].style.background="none"
+                }
+                dui[this.index].style.background="#07C1C8"
+                zhifu.innerHTML=zhifu2[this.index].innerHTML
+            }
+        }
+        dianjizhifu.onclick=function(){
+            zhifuwancheng.style.display="flex"
+        }
+        wancheng.onclick=function(){
+            window.location.href="index.html"
+        }
+        search.onclick=function(){
+            history.go(-1)
+        }
+        var str = location.href
+        var num = str.lastIndexOf("=")
+        var price = str.substr(num+1)
+        if(num==-1){
+            fukuan.innerHTML=989
+            danjia.innerHTML=989
+        }else{
+            fukuan.innerHTML=price
+            danjia.innerHTML=price
+        }
+    </script>
+</body>
+</html>
