@@ -164,14 +164,32 @@ font-size: 0.05rem;
 }
 .dibu{
     position: absolute;
-    bottom: 1rem;
+    bottom: 0.2rem;
 }
-.dibu div{
+.dibu>div{
     float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin-left:1.4rem; 
 }
 .dibu div img{
     width: 0.7rem;
     height: 0.7rem;
 }
-
+.du{
+    margin-top: 0.1rem;
+    margin-left:0.1rem;
+}
+.mai{
+    margin-left:-0.1rem; 
+    margin-top: 0.1rem;
+}
+.wu{
+    margin-left:-0.1rem; 
+    margin-top: 0.1rem;
+}
+.i{
+    margin-left:0.1rem; 
+    margin-top: 0.1rem;
+}
