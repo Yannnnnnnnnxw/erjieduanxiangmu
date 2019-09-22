@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.manfei{
+    width: 10rem;
+}
+.zuo{
+    margin-left: 0.5rem;
+}
+.zhu{
+    font-size: 0.5rem;
+    margin-left:0.5rem; 
+}
+.box{
+    display: flex;
+    flex-direction:column;
+    height: 8.5rem;
+    justify-content:space-around;
+}
+.box div{
+    margin-left: 1rem;
+    display: flex;
+    align-items:flex-start;
+}
+.yi{
+    font-size: 0.5rem;
+}
+.er{
+    font-size: 0.4rem;
+    color: #C6C6C6
+}
+.box div div{
+    display: flex;
+    flex-direction:column;
+}
+.liji{
+    width: 9rem;
+    height: 1.5rem;
+    background: #03C7C6;
+    border: none;
+    color: #E7FFFF;
+    margin-left: 0.5rem;
+    border-radius:2px ;
+}

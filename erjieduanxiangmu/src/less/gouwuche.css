@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: white;
+}
+.zuo{
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-left: 0.5rem;
+   position: relative;
+   top:0.1rem
+}
+.wode{
+    font-size: 0.4rem;
+    margin-left:0.6rem ;
+}
+.biao1{
+    display: none;
+}
+.liubai{
+    height: 0.3rem;
+    background: #F7F6FB;
+}
+.xuan div{
+    float: left;
+    font-size: 0.35rem; 
+    margin-left:0.8rem;
+    margin-right: 0.4rem;
+
+}
+.xuan::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.xuan{
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+.miaoshu{
+    float: left;
+    font-size: 0.4rem;
+    margin-top:0.9rem ;
+}
+.pian{
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.fu::after{
+   content: "";
+   display: block;
+   clear: both;
+}
+.miaoshu1{
+    float: right;
+    font-size: 0.45rem;
+}
+.ma{
+    font-size: 0.4rem;
+}
+.shuliangkuang{
+    width: 0.3rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    border: none;
+}
+.danjia{
+    font-size: 0.5rem;
+}
+.one{
+width: 7.5rem !important;
+position: relative;
+bottom: 1.3rem;
+width: 10rem;
+margin-left:2.5rem; 
+}
+.xianjia{
+    font-size: 0.2rem;
+    margin-right: 0.5rem;
+}
+.jian{
+    margin-left: 0rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    outline: 0;
+}
+.jia{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    outline: 0;
+}
+.yuan{
+    font-size: 0.3rem;
+}
+.dibu{
+    font-size: 0.4rem;
+    float: right;
+    margin-top:1rem; 
+    margin-right:-2rem ;
+}
+.xie1{
+    height: 3rem;
+}
+.xie3{
+    height: 3rem;
+}
+.xie4{
+    height: 3rem;
+}
+html{
+    overflow: hidden;
+}
+.jianshu{
+    margin-right: 1rem;
+}
+.yanse{
+    font-size:0.1rem; 
+    margin-left: 0.3rem;
+}
+.anniu{
+    border: none;
+    border-radius:8px;
+    background:#17E53B;
+    width: 1rem;
+    height: 0.5rem;
+    margin-left:0.1rem; 
+    outline: 0;
+}
+.anniu1{
+    border: none;
+    border-radius:8px;
+    background:#17E53B;
+    width: 1rem;
+    height: 0.5rem;
+    margin-left:0rem; 
+    outline: 0;
+}
+.jia{
+    font-size: 0.1rem;
+}
+.jia1{
+    font-size: 0.1rem;
+    margin-left: 0.6rem;
+}
+.didian{
+    font-size: 0.4rem;
+    margin-left: 0.8rem;
+}
+.peisong{
+    border: none;
+    margin-left:1.3rem; 
+    border-radius:8px;
+    background:#17E53B;
+    width: 1.5rem;
+    height: 0.5rem;
+    outline: 0;
+}
+.shanjia{
+    font-size: 0.5rem;
+    margin-left: 1.4rem;
+}
+.shanchu{
+    border-radius:8px;
+    background:#17E53B;
+    width: 1.5rem;
+    height: 0.5rem;
+    border: none;
+    outline: 0;
+    float: right;
+    margin-right: 0.8rem;
+    margin-top: 0.3rem;
+}
+.biao2{
+    display: block;
+}
+.biaozhi{
+    float: right;
+    margin-right:0.8rem; 
+    border-radius:8px;
+    background:#17E53B;
+    width: 1.9rem;
+    height: 0.5rem;
+    outline: 0;
+    border: none;
+}

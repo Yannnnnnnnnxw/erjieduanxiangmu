@@ -1,0 +1,177 @@
+body{
+    background: white;
+}
+li{
+    list-style: none;
+}
+.mui-table-view-cell.mui-active{
+	background-color: #0062CC;
+}
+.zi{
+    margin-left:3.5rem; 
+}
+.shu{
+    margin-left:6.2rem; 
+}
+.qianbao{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 8px;
+}
+.big{
+display: flex;
+justify-content:space-around;
+height: 2rem;
+align-items:center;
+margin-right: 0 !important;
+}
+.big span{
+    text-align: center;
+    font-size: 0.4rem;
+}
+.e{
+    margin-left:8px; 
+}
+.lingyi{
+    margin-left:17px; 
+}
+.linger{
+    margin-left:12px;     
+}
+.bao{
+    margin-left:6px; 
+    font-size: 0.45rem !important;
+}
+.big div span:first-of-type{
+    display: inline-block;
+    margin-bottom:2px; 
+}
+.liubai{
+    height: 0.3rem;
+    background: #F7F6FB
+}
+.star{
+    width: 22px;
+    height: 22px;
+    position: relative;
+    top:4px;
+    left:18px;
+}
+.xie{
+    margin-left:4rem; 
+}
+.cang{
+    position: relative;
+    left:0.5rem;
+    font-size:0.4rem; 
+}
+.right{
+    margin-left:0.3rem; 
+    position: relative;
+    top: 0.05rem;
+}
+.liang div{
+    float: left;
+}
+.liang{
+    display: inline-block;
+}
+.liang::after{
+content: "";
+display: block;
+clear: both;
+}
+.shou{
+    display: inline-block;
+    margin-left: 0.3rem;
+}
+.goumai{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top:4px;
+}
+.first{
+    margin-left:0.8rem; 
+    margin-right:4rem; 
+}
+.chushou{
+    height: 22px;
+    width: 22px;
+    position: relative;
+    top:4px;
+}
+.zhaopian{
+    width: 70px;
+    height: 70px;
+    margin-left:0.3rem; 
+}
+.xu{
+    position: relative;
+    bottom:25px;
+    left: 0.5rem;
+    font-size: 0.5rem;
+}
+.woman{
+    position: relative;
+    top:2px;
+    width: 0.4rem;
+    height: 0.4rem;
+}
+.gereng{
+position: relative;
+bottom: 0.72rem;
+left: 2rem;
+font-size: 0.05rem;
+}
+.te{
+    position: relative;
+    top:3px;
+    right: 0rem;
+}
+.sao{
+    width: 25px;
+    height: 25px;
+    margin-left:22px; 
+}
+.laba{
+    width: 25px;
+    height: 25px;
+    margin-left:5.5rem ;
+    margin-right:1rem; 
+}
+.shezhi{
+    width: 25px;
+    height: 25px;
+}
+.touxiang{
+    display: inline-block;
+    margin-top:0.2rem; 
+    margin-bottom: 0.2rem;
+}
+.ding{
+    display: inline-block;
+    margin-top:10px; 
+}
+.diss{
+    display: inline-block;
+    margin-bottom:0.5rem; 
+    margin-top: 0.5rem;
+}
+.liang span{
+    font-size: 0.4rem;
+}
+.dibu{
+    position: absolute;
+    bottom: 1rem;
+}
+.dibu div{
+    float: left;
+    margin-left:1.4rem; 
+}
+.dibu div img{
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
