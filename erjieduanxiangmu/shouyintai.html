@@ -71,8 +71,10 @@
         </div>
     </div>
     <div class="zhifuwancheng">
-        <div class="wancheng"><span>完成</span></div>
+        <div class="gif"><img src="src/img/64fb2dbe6e2cc5e86c71670d3bd78e473fff1e154348bf-h2cYxR_fw658.gif" alt=""></div>
+        <div class="wanchengzhifu"><p>完成支付</p></div>
     </div>
+    
     <script src="dest/bulid/js/jquery.js"></script>
     <script>
         var nei =document.querySelector(".anniunei")
@@ -87,6 +89,7 @@
         var zhifu2 =document.querySelectorAll(".zhifu2")
         var fukuan =document.querySelector(".fukuan")
         var danjia =document.querySelector(".danjia")
+        var wanchengzhifu =document.querySelector(".wanchengzhifu")
         $(".anniunei").click(function(){
             $(".anniunei").animate({left:'0.55rem'});
             $(".anniuwai").css({background:"#00C0C1"})
@@ -108,8 +111,11 @@
         }
         dianjizhifu.onclick=function(){
             zhifuwancheng.style.display="flex"
+            setTimeout(function(){
+                wanchengzhifu.style.display="block"
+            },3000)
         }
-        wancheng.onclick=function(){
+        wanchengzhifu.onclick=function(){
             window.location.href="index.html"
         }
         search.onclick=function(){
@@ -125,6 +131,7 @@
             fukuan.innerHTML=price
             danjia.innerHTML=price
         }
+
     </script>
 </body>
 </html>
