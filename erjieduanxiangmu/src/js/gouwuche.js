@@ -75,8 +75,7 @@ if(num==-1){
     slk.value=1
 }else{
     xj.innerHTML=price
-    slk.value=0
-    
+    slk.value=1
 }
 
 
