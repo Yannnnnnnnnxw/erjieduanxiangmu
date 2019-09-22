@@ -158,7 +158,7 @@ li{
 }
 .zhifuwancheng{
     width:100%;
-    height:3rem;
+    height:15rem;
     background:#fff;
     position: absolute;
     bottom:0rem;
@@ -168,17 +168,40 @@ li{
     align-items: center;
     box-shadow: 0 -0.05rem 0.1rem #ccc;
     display:none;
+    background-image: url("../../../src/img/starfield.jpg");
+    background-position:50% 50%;
+
 }
-.wancheng{
-    width:4rem;
-    height:0.8rem;
+.zhifuwancheng:after{
+    content:"";
+    z-index: 1;
+    background:inherit;
+    filter:blur(3rem);
+}
+.gif{
+    width:6.7rem;
+    height:6.7rem;
+    border-radius: 50%;
+    overflow: hidden;
     display:flex;
     justify-content:center;
     align-items: center;
-    border:1px #4BB93B solid;
-    border-radius: 0.1rem;
 }
-.wancheng>span{
-    font-size:0.4rem;
-    color:#4BB93B
+.wanchengzhifu{
+    position: absolute;
+    bottom:2rem;
+    left:2rem;
+    width:6rem;
+    height:1rem;
+    border:1px solid #03FCD3;
+    border-radius:0.1rem;
+    display:none;
+}
+.wanchengzhifu>p{
+    height:100%;
+    color:#03FCD3;
+    font-size:0.5rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
